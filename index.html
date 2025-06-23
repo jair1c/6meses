@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro Diario - 6 Meses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-screen" id="login-screen">
+    <div class="login-box">
+      <img src="assets/maria.gif" alt="Amor" class="login-icon" />
+      <h2>Bienvenida al lugar donde viven nuestros recuerdos...</h2>
+      <p>Ingresa nuestra fecha mágica 💛</p>
+      <input type="password" inputmode="numeric" pattern="[0-9]*" id="password" placeholder="Ingrese la contraseña" />
+      <button onclick="checkPassword()">Ingresar</button>
+      <p id="error-msg"></p>
+    </div>
+  </div>
+<!-- INTRO ANIMADA -->
+<div class="intro hidden" id="intro">
+  <div class="intro-box">
+    <h1>6 meses de nosotros…</h1>
+    <p>y esto recién comienza ✨</p>
+  </div>
+</div>
+
+  <div class="diary-container hidden" id="diary">
+    <div class="diary-entry" id="entry"></div>
+
+    <div class="navigation" id="navigation-buttons">
+      <button id="prev-btn" onclick="prevEntry()">← Carta anterior</button>
+      <button id="next-btn" onclick="nextEntry()">Carta siguiente →</button>
+    </div>
+
+    <!-- BOTONES después de la carta final -->
+    <div class="navigation hidden" id="final-options">
+      <button onclick="showMessage()" id="btn-message">✨ Mensaje oculto</button>
+      <button onclick="showGallery()" id="btn-gallery">🖼 Ver recuerdos</button>
+    </div>
+
+    <!-- GALERÍA -->
+    <div id="gallery" class="hidden gallery-container">
+      <h3>🖼 Recuerdos que viven en mi corazón</h3>
+     <div class="gallery-grid">
+
+  <div class="gallery-item">
+    <img src="gallery/corazon.jpg" alt="Cadena con corazón" />
+    <p>Cadenita del 12 de enero 💖</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery/ramo.jpg" alt="Ramo tejido" />
+    <p>Ramo tejido que te entregué</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery/girasol.jpg" alt="Girasol" />
+    <p>Tu flor favorita 🌻</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery/carta.jpg" alt="Carta PDF" />
+    <p>Carta escrita a mano ✍🏻</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery/mensaje.jpg" alt="Mensaje tierno" />
+    <p>Un mensajito especial 💬</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="gallery/ella.jpg" alt="Tú" />
+    <p>Mi inspiración diaria 🥺</p>
+  </div>
+
+</div>
+      <div class="final-actions">
+        <button onclick="showMessage()">✨ Ver mensaje oculto</button>
+        <button onclick="backToFinalCard()" class="return-btn">↩ Volver a la carta final</button>
+      </div>
+    </div>
+
+    <!-- MENSAJE FINAL -->
+    <div class="extra-message hidden" id="extra-message">
+      <h3>🌻 Mensaje solo para ti, mi amor...</h3>
+      <p>
+        Si llegaste hasta aquí, solo quiero decirte gracias.<br /><br />
+        Gracias por leerme, por sentirme, por dejar que este amor vaya creciendo a su ritmo.<br />
+        Gracias por seguir aquí, a mi lado, aunque a veces los días sean callados.<br /><br />
+        Esta página puede tener un final…<br />
+        Pero tú y yo, aún tenemos muchas páginas por escribir.<br /><br />
+        Te amo más de lo que mis palabras pueden explicar.<br />
+        Y lo mejor de todo…<br />
+        <strong>Es que esto recién comienza.</strong><br /><br />
+        💛 <em>Tu Jair</em>
+      </p>
+      <div class="final-actions">
+        <button onclick="showGallery()">🖼 Ver recuerdos</button>
+        <button onclick="backToFinalCard()" class="return-btn">↩ Volver a la carta final</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎵 Botón flotante para música -->
+  <button id="music-toggle" class="music-btn">🎵</button>
+  <audio id="bg-music" src="assets/music.mp3" loop></audio>
+  <canvas id="hearts-canvas"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>

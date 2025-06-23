@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Meses Contigo 🌻</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1>6 meses y mi corazón sigue eligiéndote... 💖</h1>
+    <p>Un girasol para cada mes de amor 🌻</p>
+  </header>
+
+  <section class="meses">
+    <h2>Haz clic en cada corazón 💗</h2>
+    <div class="contenedor-corazones">
+      <button class="corazon" data-mes="1">💖 Mes 1</button>
+      <button class="corazon" data-mes="2">💖 Mes 2</button>
+      <button class="corazon" data-mes="3">💖 Mes 3</button>
+      <button class="corazon" data-mes="4">💖 Mes 4</button>
+      <button class="corazon" data-mes="5">💖 Mes 5</button>
+      <button class="corazon" data-mes="6">💖 Mes 6</button>
+    </div>
+
+    <div class="carta" id="cartaTexto">
+      <p>Haz clic en un corazón para leer la carta 💌</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>Carta 7: Lo que viene</h2>
+    <p id="finalCarta">
+      Aquí te escribo lo que deseo contigo... para el mes 7, 8... y todos los que vengan 💞
+    </p>
+  </section>
+
+  <footer>
+    <p>Aquí me tienes, aún con los mismos ojos de amor del primer día 🫶🏻</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
