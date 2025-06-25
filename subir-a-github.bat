@@ -9,7 +9,7 @@ git add .
 echo ----------------------------
 echo  Confirmando cambios...
 echo ----------------------------
-git commit -m "Actualización realizada desde Phoenix Code"
+git commit -m "Actualizacion realizada desde Phoenix Code"
 
 echo ----------------------------
 echo  Subiendo a GitHub...
@@ -17,5 +17,5 @@ echo ----------------------------
 git push
 
 echo.
-echo ? Cambios subidos con éxito.
+echo Cambios subidos con exito.
 pause
